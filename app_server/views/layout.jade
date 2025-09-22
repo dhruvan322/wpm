@@ -3,9 +3,11 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/all.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  // Font Awesome CDN for star icons
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+  link(rel='stylesheet', href='/stylesheets/all.min.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
   body
     nav.navbar.fixed-top.navbar-expand-md.navbar-light
       .container
@@ -15,13 +17,10 @@ html
       #navbarMain.navbar-collapse.collapse
         ul.navbar-nav.mr-auto
           li.nav-item
-            
             a.nav-link(href='/about/') About
-          li.nav-item  
-            a.nav-link(href='/location/') location
     .container.content
       block content
-      footer
+    footer
       .row
         .col-12
           small &copy; Getting MEAN – Simon Holmes/Clive Harber 2018
